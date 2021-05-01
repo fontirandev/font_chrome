@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="assets/styles/popup.min.css">
+	<link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/styles/fontawesome/all.min.css">
+	<script src="assets/scripts/jquery-3.4.0.min.js"></script>
+	<script src="assets/scripts/bootstrap.bundle.min.js"></script>
+	<script src="assets/scripts/fontawesome/all.min.js"></script>
+	<style>
+		hr {
+			color: #ffffff;
+			padding: 0px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			width: 100%;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div ng-app="fontIranApp" ng-controller="bodyCtrl" class="d-flex flex-column app">
+			<div class="logo mt-4 md-2">
+				<a href='https://fontiran.com/' target="_blank">
+					<span>
+						<strong>Font</strong>iran.com </span>
+
+				</a>
+			</div>
+
+			<div class="logo mt-4 md-2">
+
+				<span id="connect"></span>
+
+			</div>
+
+			<div class="row yekta-select2">
+
+				<select class="mb-1 mt-4 yekta-select" id="fontList" style="height: 35px;">
+
+				</select>
+
+			</div>
+
+			<div class="yekta-buy-font-title"id="buy">
+				<div class="row " >
+					<div class="col-9 align-items-start" id="buy_font">
+						<a class="yekta-icon-dl-a" href="https://fontiran.com" target="blank" id="font_site3"
+							style="padding-right: 7px;">
+							خرید و دانلود فونت ایران سنس
+						</a>
+					</div>
+
+					<div class="col-3 align-items-start yekta-icon-dl">
+
+
+						<a class="yekta-icon-dl-a" href="https://fontiran.com" target="blank" id="font_site1">
+							<i class="fal fa-arrow-to-bottom ml-1" style="font-size: 18px; margin:0px 5px"></i>
+						</a>
+						<a class="yekta-icon-dl-a" href="https://fontiran.com" target="blank" id="font_site2">
+							<i class="fal fa-cart-plus mr-1" style="font-size: 18px"></i>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+
+			<br>
+
+			<div class="yekta-add-font-title">
+				<a class="yekta-icon-add-a" id="addFont" href="addFont.html" target="_blank">
+					<div class="row ">
+
+						<div class="col-9 align-items-start" style="padding-top: 3px">
+							افزودن فونت دلخواه
+						</div>
+						<div class="col-3 align-items-start yekta-icon-add">
+
+							<object data="assets/images/icon+.svg" width="20" height="20" style="margin-top: 2px;">
+							</object> </div>
+
+					</div>
+				</a>
+			</div>
+
+			<div class="container-sm" id="sites_row" style="padding-top: 8px; padding-bottom: 8px;">
+			</div>
+
+			<!-- add current site start -->
+			<div class="yekta-add-font-title" id='add_thisSite' style="display: none;margin-bottom: 10px;">
+				<a class="yekta-icon-add-a" id="add_customSite" href="#">
+					<div class="row " style="padding-top: 3px;">
+
+						<div class="col-5 align-items-start">
+							افزودن این سایت
+						</div>
+						<div class="col-7 align-items-start" style="display: inline-table;">
+							<img alt="global-fav" class="global-fav" src="#">
+							<span id="site_on"
+								style="float: left; width: 120px;overflow-x: hidden;text-overflow:ellipsis;direction: ltr;"></span>
+
+
+						</div>
+
+
+					</div>
+				</a>
+			</div>
+			<!-- add current site end -->
+
+			<!-- remove current site start -->
+			<div class="setting-tabs pb-4" style="max-height: 115px; overflow-y: auto; margin-top: 5px;display: none; margin-bottom: -10px;" id="remove_thisSite">
+				<a href="#" style="float:left;">
+					<img alt="global-fav2" class="global-fav2" src="#" style="margin-left: 4px;">
+				</a>
+				<lable class="form-check-label" id="site_on2"></lable>
+				<span style="color:#ff0000; cursor: pointer;" id="remove_customSite_text"> | Remove</span>
+				<hr>
+			</div>
+			<!-- remove current site end -->
+
+			<div class="setting-tabs pb-4" id="siteList" style="max-height: 115px; overflow-y: auto; margin-bottom: 5px">
+
+			</div>
+		</div>
+	</div>
+	<script src="assets/scripts/angular-1.7.8.min.js"></script>
+	<script src="assets/scripts/popup.min.js"></script>
+
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+change api_url to your configuration in assets\scripts\popup.min.js

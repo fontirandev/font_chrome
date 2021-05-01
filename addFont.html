@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="assets/styles/popup.min.css">
+	<link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/styles/fontawesome/all.min.css">
+	<script src="assets/scripts/bootstrap.bundle.min.js"></script>
+	<script src="assets/scripts/fontawesome/all.min.js"></script>
+	<style>
+		hr {
+			color: #fff;
+			height: 1px;
+			padding: 0px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			width: 100%;
+		}
+	</style>
+	<title>انتخاب فونت</title>
+</head>
+
+<body id="add_font_body">
+	<div class="flex-container">
+		<div ng-app="fontIranApp" ng-controller="bodyCtrl" class="d-flex flex-column app flex-item">
+			<div class="logo mt-4 md-2">
+				<a href='https://fontiran.com/' target="_blank">
+					<span>
+						<strong>Font</strong>iran.com </span>
+
+				</a>
+			</div>
+
+			<div class="yekta-buy-font-title mt-4">
+				<div class="row ">
+					<h4><strong class="add-new-font">افزودن فونت جدید</strong> </h4>
+
+
+					<div class="col-12 currnet-web">
+						یک فونت با پسوند مجاز woff,ttf,otf را انتخاب کنید.
+					</div>
+					<div class="col-12 currnet-web mt-3 mb-2">
+						<button class="btn btn-secondary yekta-gray-btn btn-sm" id='chose_file' style="color: black; background-color: white !important;">انتخاب فایل</button>
+						<input type="file"  id="inputfile"style="display:none">
+					</div>
+					<div class="col-8 currnet-web mt-2 mb-2">
+						<input class="form-control form-control-sm" type="text" placeholder="Font Name"
+							id="add_font_page_fontName">
+					</div>
+
+					<div class="col-8 currnet-web mt-2 mb-2">
+						<button type="button" class="btn btn-secondary yekta-gray-btn btn-sm" id="add-font">ذخیره
+							فونت</button>
+					</div>
+				</div>
+
+
+
+
+			</div>
+
+			<div class="yekta-buy-font-title mt-4 " id='saved_fonts' style="display: none;">
+				<div class="row ">
+					<h4><strong class="add-new-font">فونت‌های ذخیره شده</strong> </h4>
+					<hr style="color: black; width: 65%;" />
+
+					<div class="col-8 currnet-web mt-2 mb-2" id="add_font_page_fontNameList"
+						style="max-height: 120px; overflow-y: auto;">
+
+					</div>
+				</div>
+
+
+
+
+			</div>
+
+		</div>
+	</div>
+	<script src="assets/scripts/angular-1.7.8.min.js"></script>
+	<script src="assets/scripts/jquery-3.4.0.min.js"></script>
+	<script src="assets/scripts/popup.min.js"></script>
+
+	</div>
+</body>
+<script src="assets/scripts/addFont.js"></script>
+
+</html>
