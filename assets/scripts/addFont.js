@@ -67,7 +67,7 @@ $(document).ready(function () {
             fileName = "";
             for (let a = 0; a < filen.length - 1; a++) {
                 fileName += filen[a];
-                if(a < filen.length -2) fileName += '.';
+                if (a < filen.length - 2) fileName += '.';
             }
             fontName = fileName;
             document.getElementById('add_font_page_fontName').value = fontName;
